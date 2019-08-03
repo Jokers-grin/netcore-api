@@ -63,7 +63,7 @@ node {
       withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'AppServer',
       usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']])
       {
-        remote.name = 'AppServer'
+        remote.name = 'appserver'
         remote.host = "${env.ServerIP}"  //From ENVIRONMENT VARIABLE
         remote.user = "${USERNAME}"
         remote.password = "${PASSWORD}"
